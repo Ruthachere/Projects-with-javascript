@@ -1,4 +1,4 @@
-const progress =document.getElementById('progress');
+const progress = document.getElementById('progress');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const circles = document.querySelectorAll('.circle');
@@ -31,7 +31,7 @@ function update() {
         }
      })
 
-     const actives =document.querySelectorAll('.active');
+     const actives = document.querySelectorAll('.active');
      progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%';
 
      if (currentActive === 1) {
