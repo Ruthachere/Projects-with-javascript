@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #efedd6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+/* CSS STYLING FOR BLURY LOADING OF IMAGE */
+.bg{
+    background: url('https://plus.unsplash.com/premium_photo-1664299584658-9b86aa1ece97?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    filter: blur(0px);
+
+}
+.loading-text{
+    font-size: 50px;
+    color: #fff;
+}
+
+/* CSS STYLING FOR SRCOOL ANIMATION */
+h1{
+    margin: 10px;
+    font-size: 45px;
+    text-align: center;
+}
+.box{
+    background-color: steelblue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(900px);
+    transition: transform 0.4s ease;
+}
+.box:nth-of-type(even){
+    transform: translateX(-900px);
+    
+}
+.box.show{
+    transform: translateX(0);
+}
+.box h2{
+    font-size:45px ;
+}

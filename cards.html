@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cards.css">
-    <title>Expanding cards</title>
+    <title>Expanding cards and progress steps</title>
 </head>
 <body>
+  <!-- HTML STRUCTURE FOR EXPANDING CARDS -->
     <div class="container">
       <div class="panel active"
         style="background-image: url('https://images.unsplash.com/photo-1580648093732-eae5ea1a950b?q=80&w=2757&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
@@ -52,6 +53,20 @@
        <h3>Nature Calls</h3>
       </div>
     </div>
+    <!-- HTML STRUCTURE FOR PROGRESS STEPS -->
+    <div class="container-one">
+      <div class="progress-container">
+          <div class="progress" id="progress"></div>
+              <div class="circle active">1</div>
+              <div class="circle">2</div>
+              <div class="circle">3</div>
+              <div class="circle">4</div>
+          </div>
+
+          <button class="btn" id="prev">Prev</button>
+          <button class="btn" id="next">Next</button>
+  </div>
+  
 
     <script src="js/cards.js"></script>
 </body>
