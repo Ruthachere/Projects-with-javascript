@@ -15,7 +15,7 @@ function blurring() {
 
     loadText.innerText = `${load}%`;
     loadText.style.opacity = scale(load, 0, 100, 1, 0);
-    bg.style.filter =`blur(${scale(load, 0,100, 30, 0 )}px)`
+    bg.style.filter =`blur(${scale(load, 0, 100, 30, 0 )}px)`
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) =>{
@@ -23,13 +23,13 @@ const scale = (num, in_min, in_max, out_min, out_max) =>{
 }
 // JAVASCRIPT CODE FOR SCROLL ANIMATION
 const boxes = document.querySelectorAll('.box');
+
 window.addEventListener('scroll', checkBoxes);
- 
 
 checkBoxes()
 
 function checkBoxes() {
-   const triggerBottom = ( window.innerHeight / 5 *4);
+   const triggerBottom = ( window.innerHeight / 5 * 4);
 
    boxes.forEach(box =>{
     const boxTop = box.getBoundingClientRect().top;
